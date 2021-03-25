@@ -1,6 +1,6 @@
 # rosewater
 
-**rosewater** assigns genes to (super-) enhancers output from ROSE in an expression-aware manner. It allows users to set a TPM threshold to filter genes that are not expressed on a sample-by-sample basis.
+**rosewater** assigns genes to (super-) enhancers output from [ROSE](https://bitbucket.org/young_computation/rose/src/master/) in an expression-aware manner. It allows users to set a TPM threshold to filter genes that are not expressed on a sample-by-sample basis.
 
 ## Installation
 
@@ -10,7 +10,7 @@
 
 ## Usage
 
-`rosewater` is fairly simple to use. It requires an annotation GTF file, a TSV file of TPMs with the gene name column named 'gene' (these should match the 'gene_name' attributes in the annotation GTF), the name of the sample column in the TPM file, and an output file from [ROSE](). Optionally, users can set a TPM threshold (set to 5 by default) for filtering out lowly/non-expressed genes prior to assignment.
+`rosewater` is fairly simple to use. It requires an annotation GTF file, a TSV file of TPMs with the gene name column named 'gene' (these should match the 'gene_name' attributes in the annotation GTF), the name of the sample column in the TPM file, and an output file from [ROSE](https://bitbucket.org/young_computation/rose/src/master/). Optionally, users can set a TPM threshold (set to 5 by default) for filtering out lowly/non-expressed genes prior to assignment.
 
 ```
 Usage: rosewater [OPTIONS]
