@@ -1,5 +1,7 @@
 # rosewater
 
+[![PyPI version](https://badge.fury.io/py/rosewater.svg)](https://badge.fury.io/py/rosewater)
+
 **rosewater** assigns genes to (super-) enhancer output from [ROSE](https://bitbucket.org/young_computation/rose/src/master/) in an expression-aware manner. It allows users to set a TPM threshold to filter genes that are not expressed on a sample-by-sample basis.
 
 ## Installation
