@@ -237,11 +237,11 @@ def assign_genes(enh_bedtools, tpms, transcript_dict, genetype_dict, out_file, l
                                          enh_bedtools.count()), file=log_file)
     print("Enhancers overlapping no TSS: " + str(no_tss) + ", " +
           str(100 * (no_tss / total_enh)) + "% of total enhancers", file=log_file)
-    print("Enhancers overlapping one TSS: " + str(one_tss) + ", " +
+    print("Enhancers overlapping TSSes from one gene: " + str(one_tss) + ", " +
           str(100 * (one_tss / total_enh)) + "% of total enhancers", file=log_file)
-    print("Enhancers overlapping two TSSes: " + str(two_tss) + ", " +
+    print("Enhancers overlapping TSSes from two genes: " + str(two_tss) + ", " +
           str(100 * (two_tss / total_enh)) + "% of total enhancers", file=log_file)
-    print("Enhancers overlapping three or more TSSes: " + str(three_or_more_tss) + ", " + str(100 * (three_or_more_tss / total_enh)) + "% of total enhancers",
+    print("Enhancers overlapping TSSes from three or more genes: " + str(three_or_more_tss) + ", " + str(100 * (three_or_more_tss / total_enh)) + "% of total enhancers",
           file=log_file)
     print("Enhancers using all TSSes where assignment differed from ROSE: " + str(all_diff_from_rose) + ", " +
           str(100 * (all_diff_from_rose / total_enh)) + "% of total enhancers", file=log_file)

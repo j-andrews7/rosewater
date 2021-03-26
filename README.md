@@ -12,7 +12,7 @@
 
 ## Usage
 
-`rosewater` is fairly simple to use. It requires an annotation GTF file, a TSV file of TPMs with the gene name column named 'gene' (these should match the 'gene_name' attributes in the annotation GTF), the name of the sample column in the TPM file, and an output file from [ROSE](https://bitbucket.org/young_computation/rose/src/master/). Optionally, users can set a TPM threshold (set to 5 by default) for filtering out lowly/non-expressed genes prior to assignment.
+`rosewater` is fairly simple to use. It requires a GENCODE annotation GTF file, a TSV file of TPMs with the gene name column named 'gene' (these should match the 'gene_name' attributes in the annotation GTF), the name of the sample column in the TPM file, and an output file from [ROSE](https://bitbucket.org/young_computation/rose/src/master/). Optionally, users can set a TPM threshold (set to 5 by default) for filtering out lowly/non-expressed genes prior to assignment.
 
 ```
 Usage: rosewater [OPTIONS]
